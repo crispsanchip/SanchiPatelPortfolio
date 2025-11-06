@@ -1,0 +1,153 @@
+*{
+    --text: #050315;
+    --background: #f9f6eb;
+    --primary: #5ea7de;
+    --secondary: #ffc507;
+    --accent: #fc0f0f;
+}
+
+header{
+    min-height: 250px;
+    display: flex;
+    align-items: center; /* vertically center the text */
+    justify-content: center; /* horizontally center */
+    background-image: url('images/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header h1{
+    text-align: center;
+    font-size: 80px;
+    color: var(--background);
+    text-shadow: 3px 3px var(--secondary);
+    font-family: "Jaini", system-ui;
+    letter-spacing: 3px;
+}
+
+body{
+   background-color: var(--background);
+   color: var(--text); 
+}
+
+nav{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+nav a{
+    font-weight: normal;
+    font-family: "Imprima", sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--background);
+}
+
+nav a:link{
+    color: var(--background);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+button{
+    background-color: var(--secondary);
+    border: none;
+    padding: 2em;
+}
+
+nav button:hover{
+    background-color: #db970f;
+    font-size: 14px;
+    color: #e6dabe;
+    font-weight:700;
+}
+
+nav button a:hover{
+    font-weight:700;
+}
+
+#introH2{ 
+    font-family: "Hepta Slab", serif;
+    font-size: 2em;
+    color: var(--secondary);
+    grid-area: introH2;
+    margin: 0px;
+    padding: 0px;
+}
+
+#introP { 
+    max-width: 400px;;
+    grid-area: introP;
+    margin-top: 0px;
+    padding-top: 10px;
+    color: var(--text);
+    line-height: 1.5em;
+    font-size: 20px;
+    
+}
+
+#pfp{
+    grid-area: pfp;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.2em;
+    border: var(--secondary);
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+#introP, #introH2 {
+  margin: 0;
+  padding-left: 20px;
+  
+}
+
+#home{
+    margin: 2rem auto;
+    padding: auto;
+    display: grid;
+    grid-template-areas:
+        "pfp introH2"
+        "pfp introP";
+    grid-template-columns: auto 1fr;
+    gap: 0rem;
+    align-items: center;
+    max-width: 900px; 
+}
+
+footer{
+    text-align: center;
+    color: var(--primary);
+    line-height: 1.3em;
+}
+
+footer a{
+    color: var(--primary);
+}
+
+footer a:visited{
+    color: var(--primary);
+}
+
+span{
+    color: var(--primary);
+    font-weight: bold;
+}
