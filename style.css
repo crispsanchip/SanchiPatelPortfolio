@@ -4,18 +4,34 @@
     --primary: #5ea7de;
     --secondary: #ffc507;
     --accent: #fc0f0f;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
-
 header{
     min-height: 250px;
     display: flex;
     align-items: center; /* vertically center the text */
     justify-content: center; /* horizontally center */
-    background-image: url('images/banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
 
+header#Home{
+    background-image: url('images/banners/banner.png');
+}
+
+header#About{
+    background-image: url('images/banners/banner02.png');
+}
+
+header#ContactH{
+    background-image: url('images/banners/banner03.png');
+}
+
+header#Personal{
+    background-image: url('images/banners/banner04.png');
 }
 
 header h1{
@@ -117,7 +133,72 @@ nav button a:hover{
 #introP, #introH2 {
   margin: 0;
   padding-left: 20px;
-  
+}
+
+#aboutH2{ 
+    font-family: "Hepta Slab", serif;
+    font-size: 2em;
+    color: var(--secondary);
+    grid-area: introH2;
+    margin: 0px;
+    padding: 1em 0 0 0;
+}
+
+#aboutP { 
+    max-width: 400px;;
+    grid-area: introP;
+    margin-top: 0px;
+    padding-top: 10px;
+    color: var(--text);
+    line-height: 1.5em;
+    font-size: 20px;
+    
+}
+
+#aboutP, #aboutH2 {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#contactButton{
+    margin:-10em;
+    padding: 0em;
+    grid-area: contactButton;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.2em;
+    border: var(--secondary);
+    border-width: 5px;
+    border-style: solid;
+
+    font-weight: normal;
+    font-family: "Imprima", sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--background);
+}
+
+#contactButton a{
+    font-weight: normal;
+    font-family: "Imprima", sans-serif;
+    text-decoration: none;
+    color: var(--background)
+}
+
+#contactButton:hover{
+    font-size: 2em;
+    background-color: #db970f;
+    color: #e6dabe;
+    font-weight:700;
+}
+
+#contactButton button:hover{
+    font-size: 2em;
+    background-color: #db970f;
+    color: #e6dabe;
+    font-weight:700;
 }
 
 #home{
@@ -133,10 +214,25 @@ nav button a:hover{
     max-width: 900px; 
 }
 
+#about{
+    margin: 2rem auto;
+    padding: auto;
+    display: grid;
+    grid-template-areas:
+        "pfp aboutH2"
+        "contactButton aboutP";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 0rem;
+    align-items: center;
+    max-width: 900px; 
+}
+
 footer{
     text-align: center;
     color: var(--primary);
     line-height: 1.3em;
+    padding-bottom: 2em;
 }
 
 footer a{
@@ -150,4 +246,60 @@ footer a:visited{
 span{
     color: var(--primary);
     font-weight: bold;
+}
+
+#contact{
+    grid-area:contact;
+    font-family: "Hepta Slab", serif;
+    font-size: 2em;
+    color: var(--secondary);
+    margin: 0px;
+    padding: 1em 0 0 4.3em;
+}
+
+#required{
+    grid-area:required;
+    color: var(--text);
+    max-width: 400px;;
+    margin: 0px 0 0 0 ;
+    padding: 10px 0 2em 7em;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+form{
+    grid-area: form;
+    margin:auto;
+        width: 60%;
+        max-width: 30em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"], button[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+    }
+
+    input[type="submit"]{
+        background-color: var(--secondary);
+    }
+
+input, textarea{
+    margin-bottom: 0.5em;
+}
+
+#Contact{
+    margin: 1em auto;
+    padding: auto;
+    display: grid;
+    grid-template-areas:
+        "contact"
+        "required"
+        "form";
+    grid-template-columns: 1fr;
+    gap: 0rem;
+    align-items: center;
+    max-width: 700px; 
 }
