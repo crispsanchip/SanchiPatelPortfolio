@@ -1,0 +1,162 @@
+*{
+    --text: #050315;
+    --background: #f9f6eb;
+    --primary: #5ea7de;
+    --secondary: #ffc507;
+    --accent: #fc0f0f;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    min-height: 250px;
+    display: flex;
+    align-items: center; /* vertically center the text */
+    justify-content: center; /* horizontally center */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header#Home{
+    background-image: url('images/banners/banner.png');
+}
+
+header#Personal{
+    background-image: url('images/banners/banner04.png');
+}
+
+header h1{
+    text-align: center;
+    font-size: 80px;
+    color: var(--background);
+    text-shadow: 3px 3px var(--secondary);
+    font-family: "Jaini", system-ui;
+    letter-spacing: 3px;
+}
+
+body{
+   background-color: var(--background);
+   color: var(--text); 
+}
+
+nav{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+nav a{
+    font-weight: normal;
+    font-family: "Imprima", sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--background);
+}
+
+nav a:link{
+    color: var(--background);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+button{
+    background-color: var(--secondary);
+    border: none;
+    padding: 2em;
+}
+
+nav button:hover{
+    background-color: #db970f;
+    font-size: 14px;
+    color: #e6dabe;
+    font-weight:700;
+}
+
+nav button a:hover{
+    font-weight:700;
+}
+
+footer{
+    text-align: center;
+    color: var(--primary);
+    line-height: 1.3em;
+    padding-bottom: 2em;
+}
+
+footer a{
+    color: var(--primary);
+}
+
+footer a:visited{
+    color: var(--primary);
+}
+
+.illustrations-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.illustrations-gallery img{
+    height: 500px;
+    padding: 10px;
+}
+
+.chardesign-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.chardesign-gallery img{
+    height: 500px;
+    padding: 10px;
+}
+
+.chardesign-gallery .vamp {
+    height: 400px;
+}
+
+.shirt-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.shirt-gallery img{
+    width: 90%;
+    height:auto;
+    padding: 10px;
+}
+
+#guy{ width: 90%; height: auto;}
+#grave{ width: 90%; height:auto;}
+
+h2{
+    font-family: "Hepta Slab", serif;
+    font-size: 2em;
+    color: var(--secondary);
+    text-align: center;
+    margin: 1em 0 0 0 ;
+    padding: 0px;
+}
