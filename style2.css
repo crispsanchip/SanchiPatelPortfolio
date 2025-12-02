@@ -26,6 +26,14 @@ header#Personal{
     background-image: url('images/banners/banner04.png');
 }
 
+header#Client{
+    background-image: url('images/banners/banner05.png');
+}
+
+header#Projects{
+    background-image: url('images/banners/banner06.png');
+}
+
 header h1{
     text-align: center;
     font-size: 80px;
@@ -159,4 +167,163 @@ h2{
     text-align: center;
     margin: 1em 0 0 0 ;
     padding: 0px;
+}
+
+
+#priceTable table{
+    font-size: 22px;
+    width: 80%;
+    padding: 0%;
+    align-content: center;
+    margin: 1em auto;
+    border-style: solid;
+    border-color: var(--primary);
+    border-collapse: collapse;
+}
+
+#priceTable td, th{
+
+
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em;
+}
+
+#priceTable th{
+    border-color: var(--background);
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+#priceTable td{ 
+    border-color: var(--accent);
+    color: var(--text);
+    text-align: center;
+}
+
+#introH2{ 
+    font-family: "Hepta Slab", serif;
+    font-size: 2em;
+    color: var(--secondary);
+    grid-area: introH2;
+    margin: 0px 0px 0px 1em;
+    padding: 0px;
+    text-align: left;
+}
+
+#introP { 
+    max-width: 400px;;
+    padding-left: 2em;
+    grid-area: introP;
+    margin-top: 0px;
+    padding-top: 10px;
+    color: var(--text);
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+#pfp{
+    grid-area: pfp;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.2em;
+    border: var(--secondary);
+    border-width: 5px;
+    border-style: solid;
+    
+}
+#home{
+    margin: 2rem auto;
+    padding: auto;
+    display: grid;
+    grid-template-areas:
+        "pfp introH2"
+        "pfp introP";
+    grid-template-columns: auto 1fr;
+    gap: 0rem;
+    align-items: center;
+    max-width: 900px; 
+}
+
+span{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+#Catculator{
+    border-width: 0;
+    width: 90%;
+    padding: 0%;
+    align-content: center;
+    margin: 1em auto;
+    
+}
+
+#Catculator td, #Catculator th{
+    border-width: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#Catculator td img{
+    width: 300px;
+}
+
+#catText{
+    text-align: left;
+    width: 70%;
+}
+
+#cat{
+    width: 80%;
+    padding: 0%;
+    align-content: center;
+    margin: 1em auto auto 6.5em;
+}
+
+video{
+    display: block;
+    margin: 1em auto;
+    padding: 0px;
+}
+
+#MidP{
+    width: 80%; /* Sets a fixed width */
+    height: auto;
+    font-size: 20px;
+    padding: 0%;
+    align-content: center;
+    margin: 1em auto auto 4.5em;
+}
+
+#personal{
+    width: 60%; /* Sets a fixed width */
+    height: auto;
+    font-size: 20px;
+    padding: 0%;
+    align-content: center;
+    text-align: center;
+    margin:2em auto auto;
+    font-style: italic;
+    color: var(--primary);
+}
+
+#MidP a{
+    color: var(--primary);
+}
+
+#MidP a:visited{
+    color: var(--primary);
+}
+
+#catLink{
+    font-size: 20px;
+    margin-left: 5em;
+    color: var(--primary);
+}
+
+#catLink:visited{
+    color: var(--primary);
 }
